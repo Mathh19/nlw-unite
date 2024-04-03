@@ -6,7 +6,7 @@ type NavLinkProps = {
 
 export function NavLink(props: NavLinkProps) {
   return (
-    <a {...props} className="font-medium text-sm">
+    <a {...props} className="text-sm font-medium">
       {props.children}
     </a>
   );

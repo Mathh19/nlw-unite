@@ -52,14 +52,14 @@ export const AttendeeList = () => {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex gap-3  items-center">
+      <div className="flex items-center  gap-3">
         <h1 className="text-2xl font-bold">Participantes</h1>
-        <div className="w-72 flex items-center gap-3 px-3 py-1.5 border border-white/10 rounded-lg text-sm">
+        <div className="flex w-72 items-center gap-3 rounded-lg border border-white/10 px-3 py-1.5 text-sm">
           <Search className="size-4 text-emerald-300" />
           <input
             onChange={onSearchInputChanged}
             placeholder="Buscar participantes..."
-            className="bg-transparent flex-1 outline-none h-auto p-0 border-none text-sm"
+            className="h-auto flex-1 border-none bg-transparent p-0 text-sm outline-none"
           />
         </div>
       </div>
@@ -69,11 +69,11 @@ export const AttendeeList = () => {
           <TableRow className="border-b border-white/10">
             <TableHeader
               style={{ width: 48 }}
-              className="py-3 px-4 text-sm font-semibold text-left"
+              className="px-4 py-3 text-left text-sm font-semibold"
             >
               <input
                 type="checkbox"
-                className="size-4 bg-black/20 rounded border border-white/10"
+                className="size-4 rounded border border-white/10 bg-black/20"
               />
             </TableHeader>
             <TableHeader>Código</TableHeader>
@@ -82,7 +82,7 @@ export const AttendeeList = () => {
             <TableHeader>Data de check-in</TableHeader>
             <TableHeader
               style={{ width: 64 }}
-              className="py-3 px-4 text-sm font-semibold text-left"
+              className="px-4 py-3 text-left text-sm font-semibold"
             ></TableHeader>
           </TableRow>
         </thead>
@@ -93,7 +93,7 @@ export const AttendeeList = () => {
                 <TableCell>
                   <input
                     type="checkbox"
-                    className="size-4 bg-black/20 rounded border border-white/10"
+                    className="size-4 rounded border border-white/10 bg-black/20"
                   />
                 </TableCell>
                 <TableCell>{attendee.id}</TableCell>
@@ -123,7 +123,7 @@ export const AttendeeList = () => {
             </TableCell>
             <TableCell
               colSpan={3}
-              className="py-3 px-4 text-sm text-zinc-300 text-right"
+              className="px-4 py-3 text-right text-sm text-zinc-300"
             >
               <div className="inline-flex items-center gap-8">
                 <span>
